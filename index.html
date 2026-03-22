@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Maker - Invoices, Estimates, Clients</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 42%);
+            color: #1d1d1f;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+            padding: 32px 20px 56px;
+        }
+        .container { margin: 0 auto; max-width: 920px; }
+        .nav {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .brand {
+            color: #0055ff;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .nav-links a, a.inline-link {
+            color: #0055ff;
+            text-decoration: none;
+        }
+        .nav-links a:hover, a.inline-link:hover { text-decoration: underline; }
+        .hero {
+            background: #ffffffcc;
+            border: 1px solid #d9e4ff;
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(0, 85, 255, 0.08);
+            margin-bottom: 28px;
+            overflow: hidden;
+            padding: 40px 28px;
+        }
+        .eyebrow {
+            color: #0055ff;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: clamp(34px, 7vw, 56px);
+            letter-spacing: -0.03em;
+            line-height: 1.02;
+            margin-bottom: 18px;
+            max-width: 720px;
+        }
+        .lead {
+            color: #3b3b42;
+            font-size: 18px;
+            margin-bottom: 24px;
+            max-width: 680px;
+        }
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 26px;
+        }
+        .badge {
+            background: #e8f0ff;
+            border-radius: 999px;
+            color: #0043cb;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 14px;
+        }
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .primary-cta, .secondary-cta {
+            border-radius: 16px;
+            display: inline-block;
+            font-weight: 700;
+            padding: 14px 18px;
+            text-decoration: none;
+        }
+        .primary-cta {
+            background: #0055ff;
+            color: #ffffff;
+        }
+        .secondary-cta {
+            background: #eef3ff;
+            color: #0055ff;
+        }
+        .section {
+            margin-top: 36px;
+        }
+        .section h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            color: #3b3b42;
+            margin-bottom: 18px;
+        }
+        .grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e6e9f2;
+            border-radius: 22px;
+            padding: 22px 20px;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #4a4a52;
+            font-size: 15px;
+            margin: 0;
+        }
+        .footer {
+            border-top: 1px solid #e6e9f2;
+            color: #5e5e66;
+            font-size: 14px;
+            margin-top: 44px;
+            padding-top: 22px;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 10px;
+        }
+        @media (max-width: 640px) {
+            .hero { padding: 32px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="brand">Invoice Maker</div>
+            <div class="nav-links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="eyebrow">Built for freelancers and small businesses</div>
+            <h1>Create invoices and estimates without slowing down your day.</h1>
+            <p class="lead">
+                Invoice Maker is a native iPhone app for building polished invoices and estimates,
+                managing clients and catalog items, adding logo branding, and exporting documents
+                as PDF or image files.
+            </p>
+
+            <div class="badge-row">
+                <div class="badge">Invoices and estimates</div>
+                <div class="badge">Clients and items</div>
+                <div class="badge">PDF and image export</div>
+                <div class="badge">Logo branding</div>
+                <div class="badge">Pro analytics</div>
+            </div>
+
+            <div class="cta-row">
+                <a class="primary-cta" href="support.html">Get Support</a>
+                <a class="secondary-cta" href="privacy.html">Privacy Policy</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Everything you need for fast billing workflows</h2>
+            <p>
+                From the first quote to the final invoice, Invoice Maker keeps document creation
+                simple, clear, and focused on what matters most: getting paid and staying organized.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Create polished documents</h3>
+                    <p>Build invoices and estimates with taxes, discounts, notes, due dates, and payment terms.</p>
+                </div>
+                <div class="card">
+                    <h3>Reuse client details</h3>
+                    <p>Save clients and catalog items so new documents take less time to prepare.</p>
+                </div>
+                <div class="card">
+                    <h3>Export and share anywhere</h3>
+                    <p>Generate PDF or image files for sharing, printing, or saving to your workspace.</p>
+                </div>
+                <div class="card">
+                    <h3>Upgrade when you grow</h3>
+                    <p>Unlock unlimited documents, logo branding, all templates, and analytics with Pro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Simple by design</h2>
+            <p>
+                No account is required to get started. Your invoices, estimates, clients, and business
+                details stay on your device. For more details, read our
+                <a class="inline-link" href="privacy.html">Privacy Policy</a> and
+                <a class="inline-link" href="terms.html">Terms of Use</a>.
+            </p>
+        </section>
+
+        <div class="footer">
+            <div>Need help with the app, subscriptions, or exports? Contact us at <a class="inline-link" href="mailto:mintinvoiceapp@gmail.com">mintinvoiceapp@gmail.com</a>.</div>
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
